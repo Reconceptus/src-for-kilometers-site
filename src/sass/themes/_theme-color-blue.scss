@@ -1,0 +1,191 @@
+@include media(hover,1025){
+  [data-acc-color='blue'] {
+
+    body {
+      color: $acc-yellow;
+    }
+    .main {
+      background-color: $acc-blue;
+    }
+    .header {
+      background-color: $acc-yellow;
+    }
+    .acc-mode .accessibility-mode .icon {
+      background-color: $acc-blue;
+    }
+    .header-nav a {
+      color: $acc-blue;
+    }
+    .homepage-banner .statistics {
+      background-color: rgba($acc-blue,0.9);
+      color: $acc-yellow;
+    }
+    .homepage-banner .statistics .item:before {
+      background-color: $acc-yellow;
+    }
+    .site-steps .step {
+      color: $acc-yellow;
+    }
+    .site-steps .step .img {
+      filter: brightness(10);
+    }
+    .site-steps .step:before {
+      color: $link;
+    }
+    .bg--gradient .title,
+    .title {
+      color: $acc-yellow;
+    }
+    .bg--grey {
+      background-color: $acc-blue;
+    }
+    .fancybox-is-open .fancybox-bg,
+    .bg--gradient:before {
+      background: $acc-blue;
+    }
+    .btn--trans-white {
+      border-color: $acc-yellow;
+      color: $acc-yellow;
+      &:hover {
+        background-color: $acc-yellow;
+        color: $acc-blue;
+      }
+    }
+    .btn--red {
+      border-color: $acc-yellow;
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .btn--blue {
+      border-color: $acc-blue;
+      background-color: $acc-blue;
+    }
+    .btn--trans-inherit {
+      border-color: $acc-yellow;
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .table thead {
+      background-color: $acc-blue;
+    }
+    .table thead th  {
+      color: $acc-yellow;
+    }
+    .table td {
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .table tbody tr {
+      border-color: $acc-blue;
+    }
+    .offer-item .item-info {
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .offer-total .item-box {
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+
+    .offer-item .item-data .date .icon,
+    .offer-item .item-data .location .icon {
+      color: $acc-blue;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      box-shadow: 0 0 0 8px $acc-yellow inset;
+    }
+    .custom-gallery .fancybox-toolbar .fancybox-button--close {
+      color: $acc-yellow;
+    }
+    .offer-gallery .swiper-button-white,
+    .custom-gallery .fancybox-navigation .fancybox-button {
+      background-color: $acc-yellow;
+    }
+    .offer-gallery .swiper-button-white:after,
+    .custom-gallery .fancybox-navigation .fancybox-button:after {
+      border-color: transparent $acc-yellow;
+    }
+    .footer {
+      background-color: $acc-blue;
+    }
+    .footer {
+      color: $acc-yellow;
+    }
+    .footer-bottom,
+    .footer-contacts,
+    .footer-nav a {
+      color: $acc-yellow;
+    }
+    .footer-contacts .share a {
+      background-color: $acc-yellow;
+    }
+
+    // stocks
+
+    .offer-status .status.opened,
+    .offer-status .status.closed,
+    .offer-item .item-status.opened,
+    .offer-item .item-status.closed {
+      background-color: $acc-blue;
+      color: $acc-yellow;
+    }
+    .reports-list,
+    .offer-data,
+    .offers-types {
+      color: $acc-yellow;
+    }
+    .offer-item .item-action a:not(.btn) {
+      color: $acc-blue;
+    }
+    .reports-list .icon {
+      color: $acc-yellow;
+    }
+    .pagination a:not(.current){
+      background-color: $acc-yellow;
+    }
+    .pagination a:hover,
+    .pagination a.current {
+      background-color: $acc-blue;
+    }
+
+    // components
+
+    .text-box {
+      color: $acc-yellow;
+    }
+    .text-box a {
+      color: $acc-yellow;
+      background-image: linear-gradient(to bottom, rgba($acc-yellow, 0.5) 0,rgba($acc-yellow, 0.5) 100%);
+      &:hover {
+        background-image: linear-gradient(to bottom, rgba($acc-yellow, 1) 0,rgba($acc-yellow, 1) 100%);
+        color: $acc-blue;
+      }
+    }
+
+    // pages
+
+    .rating-search {
+      color: $acc-yellow;
+    }
+    .rating-search .form .fieldset .input {
+      border-color: $acc-yellow;
+    }
+    .rating-search .form .fieldset input {
+      background-color: $acc-blue;
+    }
+    .rating-search .form .fieldset .btn  {
+      border-color: $acc-yellow;
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .donate-link .link,
+    .rating-search .results-action .link {
+      background-color: $acc-yellow;
+      color: $acc-blue;
+    }
+    .error-page .error-text {
+      color: $acc-yellow;
+    }
+
+  }
+}

@@ -1,0 +1,33 @@
+.title {
+  line-height: 1.28;
+  &--lg {
+
+    font-weight: 600;
+    @include fontsize1200(48px);
+    @include fontsize1024(48px);
+
+    @include media(hover,1025){
+      margin-bottom: 2*$padding;
+    }
+    @include breakpoints(601,1024){
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    @include media(screen,600){
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    @include media(screen,420){
+      font-size: 24px;
+    }
+  }
+  &--md {
+    font-size: 28px;
+  }
+  &--sm {
+    font-size: 22px;
+  }
+  &--xs {
+    font-size: 18px;
+  }
+}

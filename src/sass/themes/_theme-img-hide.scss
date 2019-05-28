@@ -1,0 +1,39 @@
+@include media(hover,1025){
+  [data-acc-img='hide'] {
+    img {
+      display: none !important;
+    }
+    .main-banner.homepage-banner {
+      height: auto;
+    }
+    .homepage-banner .statistics-wrap {
+      margin-top: 80px;
+    }
+    .offer-item .item-img {
+      padding-bottom: 0;
+    }
+    .contact-map,
+    .offer-gallery--wrap,
+    .gallery,
+    .homepage-contacts {
+      display: none;
+    }
+
+    // stocks
+
+    .main-banner.offer-banner {
+      height: auto;
+      padding: 24px 0;
+    }
+
+    // pages
+
+    .error-page .error .logo {
+      margin: 0 15px;
+    }
+    .error-page .error .logo:after {
+      content: "0";
+    }
+
+  }
+}

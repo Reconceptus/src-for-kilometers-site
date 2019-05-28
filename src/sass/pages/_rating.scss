@@ -1,0 +1,103 @@
+.rating {
+  &-search {
+    padding: 15px 0;
+    min-height: 25vh;
+    .form {
+      @include media(hover,768){
+        margin-bottom: 60px;
+      }
+      @include media(screen,767){
+        margin-bottom: 40px;
+      }
+      .fieldset {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        box-shadow: 0 5px 15px 0 rgba($black,0.3);
+        @include media(hover,601){}
+        @include media(screen,600){
+          flex-direction: column;
+        }
+        .input {
+          width: 100%;
+
+          border-color: $btn-blue;
+          @include media(hover,601){
+            border-style: solid none solid solid;
+            border-width: 8px;
+          }
+          @include media(screen,600){
+            border-style: solid solid none solid;
+            border-width: 4px;
+          }
+        }
+        .btn {
+          flex-shrink: 0;
+          @include media(hover,601){
+            height: 64px;
+            padding: 12px 64px;
+          }
+          @include media(screen,600){
+            height: 44px;
+            width: 100%;
+            padding: 0 12px;
+          }
+        }
+        input {
+          width: 100%;
+          border: none;
+          background-color: $white;
+          color: inherit;
+          padding: 0 12px;
+          font-weight: 500;
+          @include fontsize1200(16px);
+          @include fontsize1024(16px);
+          @include breakpoints(601,1024){
+            font-size: 16px;
+          }
+          @include media(hover,601){
+            height: 48px;
+          }
+          @include media(screen,600){
+            height: 40px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .results {
+      &-action {
+        .link {
+          display: inline-block;
+
+          font-weight: 600;
+          color: $white;
+          background-color: #3b5998;
+          border-radius: 8px;
+          @include fontsize1200(18px);
+          @include fontsize1024(18px);
+          @include breakpoints(768,1024){
+            font-size: 18px;
+          }
+          @include hover(){
+            background-color: darken(#3b5998,5);
+          }
+          @include media(hover,601){
+            padding: 13px 40px;
+          }
+          @include media(screen,600){
+            padding: 12px 24px;
+          }
+        }
+      }
+    }
+    .result-item {
+      @include media(hover,768){
+        margin-bottom: 60px;
+      }
+      @include media(screen,767){
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

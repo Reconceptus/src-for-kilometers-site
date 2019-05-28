@@ -1,0 +1,78 @@
+.btn {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.18s;
+  font-weight: 600;
+  @include fontsize1200(16px);
+  @include fontsize1024(16px);
+  @include media(hover,1025){
+    font-size: 16px;
+  }
+  &--red {
+    color: $white;
+    border-color: $btn-red;
+    background-color: $btn-red;
+    &:hover {
+      border-color: $btn-red-hover;
+      background-color: $btn-red-hover;
+    }
+  }
+  &--blue {
+    color: $white;
+    border-color: $btn-blue;
+    background-color: $btn-blue;
+    &:hover {
+      border-color: $btn-blue-hover;
+      background-color: $btn-blue-hover;
+    }
+  }
+  &--trans {
+    background-color: transparent;
+    &-white {
+      color: $white;
+      border-color: $white;
+      &:hover {
+        color: $text;
+        background-color: $white;
+      }
+    }
+    &-inherit {
+      color: $text;
+      border-color: $text;
+      &:hover {
+        color: $white;
+        background-color: $text;
+      }
+    }
+  }
+  &--sm {
+    padding: 8px 24px;
+  }
+  &--xmd {
+    @include media(hover,768){
+      padding: 8px 40px;
+    }
+    @include media(screen,767){
+      padding: 8px 24px;
+    }
+  }
+  &--md {
+    @include media(hover,768){
+      padding: 22px 40px;
+    }
+    @include media(screen,767){
+      padding: 18px 24px;
+    }
+  }
+  &--full {
+    width: 100%;
+  }
+  &--rnd {
+    border-radius: 40px;
+  }
+
+}

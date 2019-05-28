@@ -1,0 +1,5 @@
+.contact-map {
+  @include media(hover,1025) {
+    margin-top: $padding;
+  }
+}

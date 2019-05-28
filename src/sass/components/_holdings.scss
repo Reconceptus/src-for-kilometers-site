@@ -1,0 +1,54 @@
+.holdings {
+  ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    @include media(hover,421){
+      margin: 0 -0.5*$padding;
+    }
+    @include media(screen,420){
+      margin: 0 -4px;
+    }
+    li {
+
+      @include media(hover,601){
+        width: 25%;
+        padding: 0 0.5*$padding;
+        margin-bottom: $padding;
+      }
+      @include breakpoints(421,600){
+        width: 50%;
+        padding: 0 0.5*$padding;
+        margin-bottom: $padding;
+      }
+      @include media(screen,420){
+        width: 50%;
+        padding: 0 4px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .item {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    @include hover(){
+      box-shadow: 0 0 48px 0 rgba($text,0.2);
+      transform: translate3d(0,-15px,0);
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.table {
+  width: 100%;
+
+  &-ovh {
+
+    @include media(hover,601){
+      width: 100%;
+    }
+    @include media(screen,600){
+      margin: 0 -15px;
+      padding: 0 15px;
+      overflow: auto;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,td {
+    @include fontsize1200(16px);
+    @include fontsize1024(16px);
+    @include media(hover,1025){
+      font-weight: 700;
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+    @include media(screen,1024){
+      font-weight: 600;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @include breakpoints(601,1024){
+      font-size: 13px;
+    }
+    @include media(screen,600){
+      font-size: 12px;
+    }
+  }
+  thead {
+    background-color: $text;
+    th {
+      color: $white;
+      text-align: left;
+      height: 48px;
+    }
+  }
+  tbody {
+    tr {
+      border-top: 8px solid $bg;
+    }
+    .cell-place {
+      border-right: 1px solid $icon;
+    }
+  }
+  td {
+    background-color: $white;
+    @include media(hover,1025){
+      height: 64px;
+    }
+    @include media(screen,1024){
+      height: 54px;
+    }
+  }
+  .cell-place {
+    padding: 0 10px;
+    text-align: center;
+    @include media(hover,1025){
+      width: 80px;
+    }
+    @include media(screen,1024){
+      width: 40px;
+    }
+  }
+  .cell-short {
+    text-align: right;
+    white-space: nowrap;
+    @include media(hover,1025){
+      width: 80px;
+    }
+    @include media(screen,1024){
+      width: 40px;
+    }
+  }
+  .sort {
+    a {
+      color: inherit;
+      display: inline-flex;
+      align-items: center;
+      @include hover(){
+        color: $link;
+      }
+    }
+    .arrow {
+      width: 10px;
+      height: 10px;
+      position: relative;
+      margin-left: 5px;
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid solid none solid;
+        border-color: currentColor transparent;
+        border-width: 5px 4px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        opacity: 0;
+      }
+    }
+    .asc {
+      .arrow:after {
+        opacity: 1;
+        transform: rotate(180deg);
+      }
+    }
+    .desc {
+      .arrow:after {
+        opacity: 1;
+      }
+    }
+  }
+  &-sort {
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    @include fontsize1200(16px);
+    @include fontsize1024(16px);
+    @include media(screen,1024){
+      font-size: 16px;
+    }
+    a {
+      margin-left: 10px;
+      color: inherit;
+      border-top: 1px solid transparent;
+      border-bottom: 1px dashed currentColor;
+      @include hover(){
+        color: $link;
+      }
+    }
+  }
+  &-action {
+    margin-top: 40px;
+  }
+}

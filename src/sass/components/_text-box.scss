@@ -1,0 +1,160 @@
+.text-box {
+  &-layout {
+    @include media(hover,1025){
+      &--lg {
+        padding-right: 16.7%;
+      }
+      &--md {
+        padding-right: 33.33%;
+      }
+    }
+  }
+  &-preview {
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+  @include fontsize1200(16px);
+  @include fontsize1024(16px);
+  @include media(screen,1024){
+    font-size: 16px;
+  }
+  line-height: 1.5;
+  h2,h3,h4 {
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  h2 {
+    @include fontsize1200(28px);
+    @include fontsize1024(28px);
+    @include breakpoints(421,1024){
+      font-size: 28px;
+    }
+    @include media(screen,420){
+      font-size: 22px;
+    }
+  }
+  h3 {
+    @include fontsize1200(24px);
+    @include fontsize1024(24px);
+    @include breakpoints(421,1024){
+      font-size: 24px;
+    }
+    @include media(screen,420){
+      font-size: 20px;
+    }
+  }
+  h4 {
+    @include fontsize1200(20px);
+    @include fontsize1024(20px);
+    @include breakpoints(421,1024){
+      font-size: 20px;
+    }
+    @include media(screen,420){
+      font-size: 18px;
+    }
+  }
+  li {
+    position: relative;
+    padding-left: 40px;
+    &:before {
+      content: "";
+      position: absolute;
+    }
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  ul li {
+    &:before {
+      width: 24px;
+      height: 2px;
+      background-color: currentColor;
+      top: 9px;
+      left: 0;
+    }
+  }
+  ol {
+    counter-reset: item;
+    li:before {
+      content: counter(item, decimal) ".";
+      counter-increment: item;
+      font-weight: 600;
+      left: 0;
+      top: 0;
+    }
+  }
+  img {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p, ul, ol, blockquote {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  a {
+    font-weight: 600;
+    color: $link;
+    background-image: linear-gradient(to bottom, rgba($link, 0.5) 0,rgba($link, 0.5) 100%);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding: 0 1px;
+    transition: all 0.18s;
+    @include hover(){
+      color: $white;
+      background-image: linear-gradient(to bottom, rgba($link, 1) 0,rgba($link, 1) 100%);
+      background-size: 100% 100%;
+    }
+  }
+  img {
+    display: block;
+    height: auto;
+    @include media(hover,1025){
+      max-width: 125%;
+    }
+    @include media(screen,1024){
+      max-width: 100%;
+    }
+  }
+  .quote,
+  blockquote {
+    position: relative;
+    padding-left: 12.5%;
+    padding-top: 10px;
+    @include fontsize1200(24px);
+    @include fontsize1024(24px);
+    @include breakpoints(768,1024){
+      font-size: 24px;
+    }
+
+    @include breakpoints(601,767){
+      font-size: 20px;
+    }
+    @include media(screen,600){
+      font-size: 18px;
+    }
+    &:before {
+      content: "\201C";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      @include media(hover,768){
+        font-size: 245px;
+        line-height: 175px;
+      }
+      @include media(screen,767){
+        font-size: 132px;
+        line-height: 80px;
+      }
+      @include media(screen,600){
+        left: -14px;
+      }
+    }
+  }
+}
