@@ -55,7 +55,7 @@ $(document).ready(() => {
 
     /* --------------------------------- document load --------------------------------- */
 
-    const siteFont = 14; // basic html font-size
+    let siteFont = 14; // basic html font-size
 
     documentClick();
     getWindowSizes();

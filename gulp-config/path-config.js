@@ -1,12 +1,12 @@
 module.exports = {
     build: {
         html: 'dev/' /* path to ready htmls */,
-        js: 'dev/assets/js/' /* path to ready js */,
-        css: 'dev/assets/css/' /* path to ready css */,
-        img: 'dev/assets/images/' /* path to ready images */,
-        media: 'dev/assets/media/' /* path to ready media-files */,
-        svg: 'dev/assets/svg/' /* path to ready svg */,
-        fonts: 'dev/assets/fonts/' /* path to ready fonts */,
+        js: '../web/js/' /* path to ready js */,
+        css: '../web/css/' /* path to ready css */,
+        img: '../web/images/' /* path to ready images */,
+        media: '../web/media/' /* path to ready media-files */,
+        svg: '../web/svg/' /* path to ready svg */,
+        fonts: '../web/fonts/' /* path to ready fonts */,
     },
     src: {
         common: 'src/' /* path to source folder */,
